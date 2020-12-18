@@ -53,4 +53,6 @@ public interface MyBaseMapper<T> extends BaseMapper<T> {
     T findOne(Serializable id);
 
     int deleteAll();
+
+    int updateBatch(@Param("list") List<T> list);
 }

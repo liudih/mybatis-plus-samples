@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.extension.injector.methods.InsertBatchSomeColumn
 import com.baomidou.mybatisplus.extension.injector.methods.LogicDeleteByIdWithFill;
 import com.baomidou.samples.injector.methods.DeleteAll;
 import com.baomidou.samples.injector.methods.FindOne;
+import com.baomidou.samples.injector.methods.UpdateBatch;
 
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class MySqlInjector extends DefaultSqlInjector {
         //增加自定义方法
         methodList.add(new DeleteAll());
         methodList.add(new FindOne());
+        methodList.add(new UpdateBatch());
         /**
          * 以下 3 个为内置选装件
          * 头 2 个支持字段筛选函数
